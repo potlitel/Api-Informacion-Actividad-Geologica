@@ -4,11 +4,7 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema(
   {
-    name: {
-      type: String,
-      required: true,
-    },
-    key: {
+    valor_escala: {
       type: String,
       required: true,
     },
@@ -16,5 +12,5 @@ const schema = new Schema(
   { timestamps: true }
 );
 schema.plugin(mongoosePaginate);
-const Localidad = mongoose.model("Localidad", schema);
-module.exports = Localidad;
+const Escala = mongoose.model("Escala", schema);
+module.exports = Escala;
