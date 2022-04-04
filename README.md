@@ -1,8 +1,8 @@
 ![plot](./images/node-js-640x400.jpg)
 
-# NodeJsApiTemplate
+# Api-Informacion-Actividad-Geologica
 
-## Plantilla para la creación de apis usando nodejs!!!!
+## Api para gestionar información relacionada con la actividad geológica!!!!
 
 ##### Includes API Server utilities:
 
@@ -98,3 +98,7 @@ npm run dev
 + Minimal test example for supertest <https://www.thiscodeworks.com/minimal-test-example-for-supertest-api-testing-nodejs-supertest/61e18883ddff800015669cba>
 + Server Testing Stack with Chai, jsdom, and SuperTest <https://codewithhasan.medium.com/server-testing-stack-with-chai-jsdom-and-supertest-1dc0213786ef>
 + Supercharge your nodejs testing using supertest <https://mistryakshar54.medium.com/supercharge-your-nodejs-testing-using-supertest-ecaa90497e2f>
++  How To Use Joi for Node API Schema Validation <https://www.digitalocean.com/community/tutorials/how-to-use-joi-for-node-api-schema-validation>
++  Joi — awesome code validation for Node.js and Express <https://softchris.github.io/pages/joi.html#introducing-joi>
++  DATA VALIDATION IN NODEJS AND EXPRESS USING JOI <https://www.topcoder.com/thrive/articles/data-validation-in-nodejs-and-express-using-joi>
++  Node.js + Express API - Request Schema Validation with Joi <https://jasonwatmore.com/post/2020/07/22/nodejs-express-api-request-schema-validation-with-joi>
