@@ -34,6 +34,8 @@
   * This simple module helps you access your application's root path from anywhere in the application without resorting to relative paths like require("../../path").
 * [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
   * This module allows you to serve auto-generated swagger-ui generated API docs from express, based on a swagger.json file. The result is living documentation for your API hosted from your API server via a route.
+* [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
+  * This library reads your JSDoc-annotated source code and generates an OpenAPI (Swagger) specification.
 * [helmet](https://www.npmjs.com/package/helmet)
   * Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
 * [dotenv](https://www.npmjs.com/package/dotenv)
