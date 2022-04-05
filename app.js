@@ -16,6 +16,7 @@ require("./startup/swagger-ui-express")(app);
 require("./startup/db")();
 app.use(morgan('combined', { stream: loggerWinston.stream }));
 app.use(helmet());
+//app.use("/api/v1");
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
 

@@ -20,6 +20,8 @@
   * The ultimate CLI tool for populating your MongoDB database 🚀.Define MongoDB documents in JSON, JavaScript or even TypeScript file(s). Import them with command line interface.
 * [mongoose-paginate](https://www.npmjs.com/package/mongoose-paginate)
   * Pagination plugin for Mongoose
+* [mongoose-unique-validator](https://www.npmjs.com/package/mongoose-paginate)
+  * Pagination plugin for Mongoose
 * [cors](https://www.npmjs.com/package/cors)
   * CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 * [joi](https://www.npmjs.com/package/joi)
