@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "0f7d99f1-99fe-438e-974c-c2e0ef092f93",
+		"name": "Api-Informacion-Actividad-Geologica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Escala",
+			"item": [
+				{
+					"name": "Get Escalas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/escala/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"escala",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Escala",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor_escala\":\"Alain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/escala/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"escala",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Escala",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/v1/escala/624f8602d24227bd3edec514",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"escala",
+								"624f8602d24227bd3edec514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Escala",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor_escala\":\"Alain1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/escala/624f8602d24227bd3edec514",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"escala",
+								"624f8602d24227bd3edec514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Escala",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/v1/escala/624f85fed24227bd3edec512",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"escala",
+								"624f85fed24227bd3edec512"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
