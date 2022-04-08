@@ -94,7 +94,7 @@ describe('the welcome api page returns the correct content', () => {
     });
 });
   
-describe('the homepage body', () => {
+/*describe('the homepage body', () => {
     it('the #page-title element contains the page title', async () => {
         const pageText = 'Welcome to API - HomePage 🙌👋🌎⭐️👏☀️🚀✨';
         const response = await request(url).
@@ -102,4 +102,4 @@ describe('the homepage body', () => {
         send();
         assert.include(parseTextFromHTML(response.body, '#page-body'), pageText);
     });
-  });  
+  });*/  
