@@ -1,6 +1,7 @@
 const express = require("express");
 const escalas = require('../routes/Escala-Route');
 const estadios = require('../routes/Estadio-Route');
+const TipoProyectoGeologico = require('../routes/TipoProyectoGeologico-Route');
 
 const router = express.Router();
 
@@ -13,5 +14,6 @@ router.get("/", (req, res) => {
 
 router.use(escalas.path, escalas.router);
 router.use(estadios.path, estadios.router);
+router.use(TipoProyectoGeologico.path, TipoProyectoGeologico.router);
 
 module.exports = router;
