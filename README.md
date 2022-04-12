@@ -106,3 +106,4 @@ npm run dev
 +  Joi — awesome code validation for Node.js and Express <https://softchris.github.io/pages/joi.html#introducing-joi>
 +  DATA VALIDATION IN NODEJS AND EXPRESS USING JOI <https://www.topcoder.com/thrive/articles/data-validation-in-nodejs-and-express-using-joi>
 +  Node.js + Express API - Request Schema Validation with Joi <https://jasonwatmore.com/post/2020/07/22/nodejs-express-api-request-schema-validation-with-joi>
++  MANUAL DE INSTRUCCIONES DE LA ACTIVIDAD DE INVESTIGACIÓN GEOLÓGICA <https://www.minem.gob.cu/sites/default/files/articulos-genericos/archivos/manual_instrucciones_geologia_p.pdf>
