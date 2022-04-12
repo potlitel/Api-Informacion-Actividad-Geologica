@@ -1,5 +1,6 @@
 const express = require("express");
 const escalas = require('../routes/Escala-Route');
+const estadios = require('../routes/Estadio-Route');
 
 const router = express.Router();
 
@@ -11,5 +12,6 @@ router.get("/", (req, res) => {
 });
 
 router.use(escalas.path, escalas.router);
+router.use(estadios.path, estadios.router);
 
 module.exports = router;
