@@ -10,6 +10,7 @@ const Provincia = require('../routes/Provincia-Route');
 const Municipio = require('../routes/Municipio-Route');
 const Localidad = require('../routes/Localidad-Route');
 const Rol = require('../routes/Rol-Route');
+const Nivel = require('../routes/Nivel-Route');
 
 const router = express.Router();
 
@@ -31,5 +32,6 @@ router.use(Provincia.path, Provincia.router);
 router.use(Municipio.path, Municipio.router);
 router.use(Localidad.path, Localidad.router);
 router.use(Rol.path, Rol.router);
+router.use(Nivel.path, Nivel.router);
 
 module.exports = router;
