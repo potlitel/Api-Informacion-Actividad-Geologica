@@ -4,6 +4,7 @@ const estadios = require('../routes/Estadio-Route');
 const TipoProyectoGeologico = require('../routes/TipoProyectoGeologico-Route');
 const ObjetivoGeologico = require('../routes/ObjetivoGeologico-Route');
 const GrupoMinerales = require('../routes/GrupoMinerales-Route');
+const MateriaPrima = require('../routes/MateriaPrima-Route');
 
 const router = express.Router();
 
@@ -19,5 +20,6 @@ router.use(estadios.path, estadios.router);
 router.use(TipoProyectoGeologico.path, TipoProyectoGeologico.router);
 router.use(ObjetivoGeologico.path, ObjetivoGeologico.router);
 router.use(GrupoMinerales.path, GrupoMinerales.router);
+router.use(MateriaPrima.path, MateriaPrima.router);
 
 module.exports = router;
