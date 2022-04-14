@@ -11,13 +11,10 @@ const schema = new Schema(
       required: true,
       unique:true
     },
-    municipio: [
-      { type: Schema.Types.ObjectId, ref: "Municipio", required: true },
-    ],
   },
   { timestamps: true }
 );
 schema.plugin(mongoosePaginate);
-schema.plugin(uniqueValidator, { message: 'Valor de localidad ya existente. Debe seleccionar otro valor.' });
-const Localidad = mongoose.model("Localidad", schema);
-module.exports = Localidad;
+schema.plugin(uniqueValidator, { message: 'Valor de Rol ya existente. Debe seleccionar otro valor.' });
+const Rol = mongoose.model("Rol", schema);
+module.exports = Rol;
