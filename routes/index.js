@@ -7,6 +7,7 @@ const GrupoMinerales = require('../routes/GrupoMinerales-Route');
 const MateriaPrima = require('../routes/MateriaPrima-Route');
 const EstadoFactura = require('../routes/EstadoFactura-Route');
 const Provincia = require('../routes/Provincia-Route');
+const Municipio = require('../routes/Municipio-Route');
 
 const router = express.Router();
 
@@ -25,5 +26,6 @@ router.use(GrupoMinerales.path, GrupoMinerales.router);
 router.use(MateriaPrima.path, MateriaPrima.router);
 router.use(EstadoFactura.path, EstadoFactura.router);
 router.use(Provincia.path, Provincia.router);
+router.use(Municipio.path, Municipio.router);
 
 module.exports = router;
