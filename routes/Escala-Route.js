@@ -17,7 +17,7 @@ router.post("/", validate(validationEscala.escala), Controller.create);
 router.get("/:id", Controller.get);
 
 //UPDATE
-router.put("/:id", Controller.update);
+router.put("/:id", validate(validationEscala.escala), Controller.update);
 
 // DELETE
 router.delete("/:id", Controller.delete);
