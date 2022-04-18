@@ -11,6 +11,6 @@ exports.escala = Joi.object()
       'string.empty': `El campo "valor_escala" no puede estar vacío`,
       'string.min': `El campo "valor_escala" debe tener un mínimo de longitud de {#limit} caracteres`,
       'string.max': `El campo "valor_escala" debe tener un máximo de longitud de {#limit} caracteres`,
-      'any.required': `El campo "valor_escala" en un campo requerido`
+      'any.required': `El campo "valor_escala" es un campo requerido`
     })
   });

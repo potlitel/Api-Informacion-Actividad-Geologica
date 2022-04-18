@@ -11,6 +11,6 @@ exports.estadio = Joi.object()
       'string.empty': `El campo "valor_estadio" no puede estar vacío`,
       'string.min': `El campo "valor_estadio" debe tener un mínimo de longitud de {#limit} caracteres`,
       'string.max': `El campo "valor_estadio" debe tener un máximo de longitud de {#limit} caracteres`,
-      'any.required': `El campo "valor_estadio" en un campo requerido`
+      'any.required': `El campo "valor_estadio" es un campo requerido`
     })
   });
