@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 
 const schema = new Schema(
   {
-    valor_tipo_proyecto: {
+    nombre: {
       type: String,
       required: true,
       unique:true
