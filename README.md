@@ -26,6 +26,10 @@
   * CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 * [joi](https://www.npmjs.com/package/joi)
   * The most powerful schema description language and data validator for JavaScript.
+* [joi-objectid](https://www.npmjs.com/package/joi-objectid)
+  * A MongoDB ObjectId validator for Joi.
+* [joi-oid](https://www.npmjs.com/package/joi-oid)
+  * Joi validator with Mongo ObjectId.
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
 * [winston](https://www.npmjs.com/package/winston)
