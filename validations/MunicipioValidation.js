@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const JoiOid = require('joi-oid')
 
-exports.localidad = Joi.object()
+exports.municipio = Joi.object()
   .keys({
     nombre: Joi.string()
       .min(5)
@@ -14,11 +14,11 @@ exports.localidad = Joi.object()
       'string.max': `El campo "nombre" debe tener un máximo de longitud de {#limit} caracteres`,
       'any.required': `El campo "nombre" en un campo requerido`
       }),
-    municipio: JoiOid.objectId()
+    provincia: JoiOid.objectId()
       .required()
       .messages({
-      'string.base': `El campo "municipio" debe ser de tipo 'integer'`,
-      'string.empty': `El campo "municipio" no puede estar vacío`,
-      'any.required': `El campo "municipio" en un campo requerido`
+      'string.base': `El campo "provincia" debe ser de tipo 'integer'`,
+      'string.empty': `El campo "provincia" no puede estar vacío`,
+      'any.required': `El campo "provincia" en un campo requerido`
       })
   });
