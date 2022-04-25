@@ -50,6 +50,8 @@
   * The assert module from Node.js, for the browser.
 * [chai](https://www.npmjs.com/package/chai)
   * Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+* [memory-cache](https://www.npmjs.com/package/memory-cache)
+  * A simple in-memory cache for node.js.
 * [jsdom](https://www.npmjs.com/package/jsdom)
   * jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web applications.
 
