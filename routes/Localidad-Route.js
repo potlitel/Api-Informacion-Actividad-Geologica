@@ -6,8 +6,11 @@ const validationLocalidad = require('../validations/LocalidadValidation')
 const {
   validate
 } = require('../middlewares/validationMiddleware')
+
+const { cacheMiddleware } = require("../middlewares/memory-cache.middleware");
+
 // GET ALL
-router.get("/", Controller.get_all);
+router.get("/", cacheMiddleware(5), Controller.get_all);
 
 // POST
 router.post("/", validate(validationLocalidad.localidad),Controller.create);
