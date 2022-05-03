@@ -4,6 +4,7 @@ import "./bootstrap/bootstrap.bundle.min.js"
 
 
 import logo from "./images/pngwing.com.png"
+import escala from "./images/thermometer-scale_38798.png"
 import { Button } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
 import { Routes, Route } from "react-router-dom";
