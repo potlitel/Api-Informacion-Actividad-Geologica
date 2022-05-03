@@ -2,6 +2,7 @@ import "./bootstrap/bootstrap.min.css";
 import "./bootstrap/bootstrap-icons.css";
 import "./bootstrap/bootstrap.bundle.min.js"
 
+
 import logo from "./images/pngwing.com.png"
 import { Button } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
@@ -20,14 +21,15 @@ import ObjetivosGeologicosList from "./components/ObjetivoGeologico/ObjetivosGeo
 import ProvinciasList from "./components/Provincia/ProvinciasList"
 import RolesList from "./components/Rol/RolesList"
 import TiposProyectosGeologicosList from "./components/TipoProyectoGeologico/TiposProyectosGeologicosList"
+import FooterView from "./components/Footer"
 
 
 
 function App() {
 
   return (
-    <div class="m-3">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
             <img src={logo} width="50" height="50" alt="CoolBrand"/>
@@ -71,9 +73,11 @@ function App() {
           <Route path="/roles" element={<RolesList />} />
           <Route path="/tiposProyectosGeologicos" element={<TiposProyectosGeologicosList />} />
         </Routes>
-      </div>     
-</div>
-
+      </div>    
+      {<FooterView />}
+    </div>
+    
+    
   )
 }
 
