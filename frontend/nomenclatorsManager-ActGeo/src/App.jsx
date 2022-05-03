@@ -2,14 +2,25 @@ import "./bootstrap/bootstrap.min.css";
 import "./bootstrap/bootstrap-icons.css";
 import "./bootstrap/bootstrap.bundle.min.js"
 
-import logo from "./images/geological-research.jpg"
+import logo from "./images/pngwing.com.png"
 import { Button } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
 import { Routes, Route } from "react-router-dom";
 import GrupoMineralesList from "./components/GrupoMineralesList";
 import MainView from "./components/mainView"
-import EscalasList from "./components/Escalas/EscalasList"
 import NomencladoresMenu from "./components/NomecladoresMenu"
+import EscalasList from "./components/Escalas/EscalasList"
+import EstadiosList from "./components/Estadios/EstadiosList"
+import EstadosFacturasList from "./components/EstadoFactura/EstadoFactura"
+import LocalidadList from "./components/Localidad/LocalidadList"
+import MateriasPrimasList from "./components/MateriaPrima/MateriaPrimaList"
+import MunicipiosList from "./components/Municipios/MunicipiosList"
+import NivelesList from "./components/Niveles/NivelesList"
+import ObjetivosGeologicosList from "./components/ObjetivoGeologico/ObjetivosGeologicosList";
+import ProvinciasList from "./components/Provincia/ProvinciasList"
+import RolesList from "./components/Rol/RolesList"
+import TiposProyectosGeologicosList from "./components/TipoProyectoGeologico/TiposProyectosGeologicosList"
+
 
 
 function App() {
@@ -49,6 +60,16 @@ function App() {
           <Route path="/" element={<MainView />} />
           <Route path="/grupoMinerales" element={<GrupoMineralesList />} />
           <Route path="/escalas" element={<EscalasList />} />
+          <Route path="/estadios" element={<EstadiosList />} />
+          <Route path="/estadoFacturas" element={<EstadosFacturasList />} />
+          <Route path="/localidades" element={<LocalidadList />} />
+          <Route path="/materiasPrimas" element={<MateriasPrimasList />} />
+          <Route path="/municipios" element={<MunicipiosList />} />
+          <Route path="/niveles" element={<NivelesList />} />
+          <Route path="/objetivosGeologicos" element={<ObjetivosGeologicosList />} />
+          <Route path="/provincias" element={<ProvinciasList />} />
+          <Route path="/roles" element={<RolesList />} />
+          <Route path="/tiposProyectosGeologicos" element={<TiposProyectosGeologicosList />} />
         </Routes>
       </div>     
 </div>

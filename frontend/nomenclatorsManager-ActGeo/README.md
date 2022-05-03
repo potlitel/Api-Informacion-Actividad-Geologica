@@ -30,3 +30,5 @@ https://github.com/vladocar/Box-CSS-Framework
 
 https://www.bezkoder.com/react-hooks-crud-axios-api/
 https://www.bezkoder.com/react-node-express-mongodb-mern-stack/
+
+https://github.com/bezkoder/react-hooks-crud-web-api

@@ -8,12 +8,12 @@ export default function GrupoMineralesList() {
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/estadios"} className="nav-link">
                               Estadío
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/estadoFacturas"} className="nav-link">
                               Estado Factura
                             </Link>      
                             </a>
@@ -23,42 +23,42 @@ export default function GrupoMineralesList() {
                             </Link>          
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/localidades"} className="nav-link">
                               Localidad
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/materiasPrimas"} className="nav-link">
                               Materia Prima
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/municipios"} className="nav-link">
                               Municipio
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/niveles"} className="nav-link">
                               Nivel
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/objetivosGeologicos"} className="nav-link">
                               Objetivo Geológico
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/provincias"} className="nav-link">
                               Provincia
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/roles"} className="nav-link">
                               Rol
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
-                              <Link to={"/escalas"} className="nav-link">
+                              <Link to={"/tiposProyectosGeologicos"} className="nav-link">
                               Tipo Proyecto Geológico
                             </Link>      
                             </a>
