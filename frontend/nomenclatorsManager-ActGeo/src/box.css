@@ -1,4 +1,4 @@
-.main{width:975px; margin:0 auto;}
+.main{width:100%; margin:0 auto;}
 
 .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10,.g11,.g12,
 .gp10,.gp12,.gp17,.gp20,.gp25,.gp33,.gp50,.gp67,.gp75,.gp80,.gp83,.gp100
@@ -17,23 +17,23 @@
 
 .g1  {width:80px; }
 .g2  {width:160px;}
-.g3  {width:240px;}
-.g4  {width:320px;}
+.g3  {width:270px;}
+.g4  {width:430px; text-align: justify;}
 .g5  {width:400px;}
-.g6  {width:480px;}
+.g6  {width:650px; text-align: justify;}
 .g7  {width:560px;}
-.g8  {width:640px;}
+.g8  {width:780px;}
 .g9  {width:720px;}
 .g10 {width:800px;}
 .g11 {width:880px;}
-.g12 {width:960px;}
+.g12 {width:100%;}
 
 .gp10  {width:10%}
 .gp12  {width:12.5%}
 .gp17  {width:16.66%}
 .gp20  {width:20%}
 .gp25  {width:25%}
-.gp33  {width:33.33%}
+.gp33  {width:33.33%; text-align: justify;}
 .gp50  {width:50%}
 .gp67  {width:66.67%}
 .gp75  {width:75%}
