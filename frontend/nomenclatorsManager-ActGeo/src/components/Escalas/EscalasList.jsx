@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import TutorialDataService from "../../services/EscalasServices";
 import { Link } from "react-router-dom";
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Heading, Flex, Text, Spacer } from '@chakra-ui/react'
 import "../../box.css"
 import logo2 from "../../images/pngwing.com (3).png"
+import escala from "../../images/thermometer-scale_38798.png"
 
 export default function EscalasList() { 
 
@@ -52,13 +53,18 @@ export default function EscalasList() {
             <Heading>Listado de Escalas</Heading>
           <section>
             {tutorials.map((tuto,index) => (
-              <Box key={tuto.id}
+              <Box key={tuto._id}
                 bg="gray.100"
                 p={4}
                 m={4}
                 borderRadius="lg"
               >
-                Escala {index +1} : { tuto.valor_escala}
+                <Flex align="center">
+                  <img src={escala} width="32" height="32" />
+                  <Text fontSize="2x1">
+                      Escala {index + 1} : <strong>{tuto.valor_escala}</strong>
+                  </Text>
+                </Flex>
               </Box>
             ))}  
           </section>
