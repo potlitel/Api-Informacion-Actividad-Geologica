@@ -34,3 +34,5 @@ https://www.bezkoder.com/react-node-express-mongodb-mern-stack/
 https://github.com/bezkoder/react-hooks-crud-web-api
 
 https://codepen.io/scanfcode/pen/MEZPNd
+
+https://www.web-eau.net/blog/10-best-footer-html-css-snippets
