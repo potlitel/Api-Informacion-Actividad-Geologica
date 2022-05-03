@@ -31,8 +31,8 @@ function App() {
     <div class="">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-            <img src={logo} width="50" height="50" alt="CoolBrand"/>
+            <a href="/" class="navbar-brand">
+            <img src={logo} width="70" height="70" alt="CoolBrand"/>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
