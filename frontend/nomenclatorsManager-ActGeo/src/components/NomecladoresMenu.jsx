@@ -29,7 +29,12 @@ export default function GrupoMineralesList() {
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/estadoFacturas"} className="nav-link">
-                              Estado Factura
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Estado Factura
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
@@ -44,42 +49,82 @@ export default function GrupoMineralesList() {
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/localidades"} className="nav-link">
-                              Localidad
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Localidad
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/materiasPrimas"} className="nav-link">
-                              Materia Prima
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Materia Prima
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/municipios"} className="nav-link">
-                              Municipio
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Municipio
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/niveles"} className="nav-link">
-                              Nivel
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Nivel
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/objetivosGeologicos"} className="nav-link">
-                              Objetivo Geológico
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Objetivo Geológico
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/provincias"} className="nav-link">
-                              Provincia
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Provincia
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/roles"} className="nav-link">
-                              Rol
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Rol
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                             <a href="#" class="dropdown-item">
                               <Link to={"/tiposProyectosGeologicos"} className="nav-link">
-                              Tipo Proyecto Geológico
+                              <Flex align="center">
+                                  <img src={escala} width="32" height="32" />
+                                  <Text fontSize="2x1">
+                                      Tipo de Proyecto Geológico
+                                  </Text>
+                                </Flex>
                             </Link>      
                             </a>
                         </div>

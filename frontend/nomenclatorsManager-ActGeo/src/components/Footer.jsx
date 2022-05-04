@@ -1,5 +1,6 @@
 import "../footer.css"
-import { Divider, Button } from '@chakra-ui/react'
+import { Divider, Icon } from '@chakra-ui/react'
+//import { MdSettings } from 'react-icons/md'
 import { Search2Icon } from '@chakra-ui/icons'
 
 export default function Footer() { 
