@@ -1,6 +1,7 @@
 import "../footer.css"
 import { Divider, Icon } from '@chakra-ui/react'
-//import { MdSettings } from 'react-icons/md'
+import { MdSettings } from 'react-icons/md'
+import { FaBeer } from 'react-icons/fa';
 import { Search2Icon } from '@chakra-ui/icons'
 
 export default function Footer() { 
@@ -49,7 +50,7 @@ export default function Footer() {
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#">{<Search2Icon />}</a></li>
+              <li><a class="facebook" href="#"><Icon as={FaBeer} /></a></li>
               <li><a class="twitter" href="#"><i class="fa fa-twitter">{<Search2Icon />}</i></a></li>
               <li><a class="dribbble" href="#"><i class="fa fa-dribbble">{<Search2Icon />}</i></a></li>
               <li><a class="linkedin" href="#"><i class="fa fa-linkedin">{<Search2Icon />}</i></a></li>   

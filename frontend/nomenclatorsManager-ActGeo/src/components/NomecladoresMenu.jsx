@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Flex, Text, Spacer } from '@chakra-ui/react'
 import escala from "../images/thermometer-scale_38798.png"
 import estadio from "../images/estadío.png"
+import estadoLogo from "../images/estadoFactura.png"
 import grupoMinerales from "../images/mineral-heart_38203.png"
 
 export default function GrupoMineralesList() { 
@@ -30,7 +31,7 @@ export default function GrupoMineralesList() {
                             <a href="#" class="dropdown-item">
                               <Link to={"/estadoFacturas"} className="nav-link">
                               <Flex align="center">
-                                  <img src={escala} width="32" height="32" />
+                                  <img src={estadoLogo} width="32" height="32" />
                                   <Text fontSize="2x1">
                                       Estado Factura
                                   </Text>
