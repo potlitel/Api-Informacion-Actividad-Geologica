@@ -11,6 +11,7 @@ const roles = [
 const mapToEntities = (roles) => {
   return roles.map((rol, index) => {
     return {
+      _id : getObjectId(rol.nombre),
       nombre: rol.nombre
     };
   });

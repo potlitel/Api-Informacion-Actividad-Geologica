@@ -12,6 +12,7 @@ const niveles = [
 const mapToEntities = (niveles) => {
   return niveles.map((nivel, index) => {
     return {
+      _id : getObjectId(nivel.numero),
       numero: nivel.numero
     };
   });

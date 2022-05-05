@@ -1,18 +1,19 @@
 const { getObjectId } = require("mongo-seeding");
 
 const proyectos = [
-  { nombre: "Proyectos de explotaciones mineras (energéticas y no energéticas)"},
-  { nombre: "Planes de restauración y estudios de impacto ambiental (E.I.A)"},
-  { nombre: "Proyectos de restauración de infraestructura minera"},
-  { nombre: "Programa de Reducción de Riesgos y Desastres"},
-  { nombre: "Proyectos para la búsqueda y evaluación de recursos minerales "},
-  { nombre: "Proyectos temático-productivos"},
-  { nombre: "Proyectos metodológico-experimentales "}
+  { nombre: "Proyectos de explotaciones mineras (energï¿½ticas y no energï¿½ticas)"},
+  { nombre: "Planes de restauraciï¿½n y estudios de impacto ambiental (E.I.A)"},
+  { nombre: "Proyectos de restauraciï¿½n de infraestructura minera"},
+  { nombre: "Programa de Reducciï¿½n de Riesgos y Desastres"},
+  { nombre: "Proyectos para la bï¿½squeda y evaluaciï¿½n de recursos minerales "},
+  { nombre: "Proyectos temï¿½tico-productivos"},
+  { nombre: "Proyectos metodolï¿½gico-experimentales "}
 ];
 
 const mapToEntities = (proyectos) => {
   return proyectos.map((proyecto, index) => {
     return {
+      _id : getObjectId(proyecto.nombre),
       nombre: proyecto.nombre
     };
   });

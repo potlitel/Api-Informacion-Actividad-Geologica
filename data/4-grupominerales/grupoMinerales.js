@@ -13,6 +13,7 @@ const grupoMinerales = [
 const mapToEntities = (grupoMinerales) => {
   return grupoMinerales.map((mineral, index) => {
     return {
+      _id : getObjectId(mineral.nombre),
       nombre: mineral.nombre
     };
   });

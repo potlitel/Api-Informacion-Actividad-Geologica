@@ -3,7 +3,7 @@ const Entity = require("../models/Nomenclators/Municipio");
 // GET ALL
 exports.get_all = async (req, res, next) => {
   try {
-    const entities = await Entity.find();
+    const entities = await Entity.find().populate("provincia");
     return res.status(200).send(entities);
   } catch (err) {
     next(err);

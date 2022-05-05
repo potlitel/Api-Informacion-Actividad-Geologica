@@ -8,6 +8,7 @@ const objetivos = [
 const mapToEntities = (objetivos) => {
   return objetivos.map((objetivo, index) => {
     return {
+      _id : getObjectId(objetivo.nombre),
       nombre: objetivo.nombre
     };
   });

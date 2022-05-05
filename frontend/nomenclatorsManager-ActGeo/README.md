@@ -40,3 +40,17 @@ https://www.web-eau.net/blog/10-best-footer-html-css-snippets
 https://react-icons.github.io/react-icons/
 
 http://geologia.uchile.cl/investigacion/lineas-de-investigacion
+
+https://npm.io/package/mongo-seeding-cli
+
+https://www.npmjs.com/package/mongo-seeding-cli#configuration
+
+https://dalthonmh.medium.com/como-usar-mongo-seeding-cli-con-express-y-mongoose-f3bb509cbd7c
+
+https://www.golangprograms.com/display-json-data-in-reactjs.htmls
+
+https://observablehq.com/@hugodf/mongodb-objectid-generator
+
+https://www.golangprograms.com/display-json-data-in-reactjs.html
+
+https://github.com/pkosiec/mongo-seeding
