@@ -38,3 +38,5 @@ https://codepen.io/scanfcode/pen/MEZPNd
 https://www.web-eau.net/blog/10-best-footer-html-css-snippets
 
 https://react-icons.github.io/react-icons/
+
+http://geologia.uchile.cl/investigacion/lineas-de-investigacion

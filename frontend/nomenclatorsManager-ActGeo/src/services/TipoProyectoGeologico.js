@@ -5,25 +5,25 @@ function sleep(ms) {
 }
 
 const getAll = () => {
-  return http.get("/escala");
+  return http.get("/tipoProyectoGeologico");
 };
 const get = id => {
-  return http.get(`/escala/${id}`);
+  return http.get(`/tipoProyectoGeologico/${id}`);
 };
 const create = data => {
-  return http.post("/escala", data);
+  return http.post("/tipoProyectoGeologico", data);
 };
 const update = (id, data) => {
-  return http.put(`/escala/${id}`, data);
+  return http.put(`/tipoProyectoGeologico/${id}`, data);
 };
 const remove = id => {
-  return http.delete(`/escala/${id}`);
+  return http.delete(`/tipoProyectoGeologico/${id}`);
 };
 const removeAll = () => {
-  return http.delete(`/escala`);
+  return http.delete(`/tipoProyectoGeologico`);
 };
 const findByTitle = title => {
-  return http.get(`/escala?title=${title}`);
+  return http.get(`/tipoProyectoGeologico?title=${title}`);
 };
 const grupoMineralesService = {
   getAll,

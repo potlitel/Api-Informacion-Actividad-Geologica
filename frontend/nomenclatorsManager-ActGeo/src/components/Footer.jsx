@@ -1,8 +1,10 @@
 import "../footer.css"
 import { Divider, Icon } from '@chakra-ui/react'
-import { MdSettings } from 'react-icons/md'
+import { MdFacebook, MdSanitizer } from 'react-icons/md'
+import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineDribbble } from "react-icons/ai";
 import { FaBeer } from 'react-icons/fa';
 import { Search2Icon } from '@chakra-ui/icons'
+import facebook from "../images/facebook.png"
 
 export default function Footer() { 
     return (
@@ -50,10 +52,10 @@ export default function Footer() {
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><Icon as={FaBeer} /></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter">{<Search2Icon />}</i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble">{<Search2Icon />}</i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin">{<Search2Icon />}</i></a></li>   
+              <li><a class="facebook" href="#"><Icon as={MdFacebook} w={6} h={6}/></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"><Icon as={AiFillTwitterCircle} w={6} h={6}/></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><Icon as={AiFillLinkedin} w={6} h={6}/></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"><Icon as={AiOutlineDribbble} w={6} h={6}/></i></a></li>   
             </ul>
           </div>
         </div>

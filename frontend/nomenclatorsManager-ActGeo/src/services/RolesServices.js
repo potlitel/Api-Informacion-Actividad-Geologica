@@ -1,29 +1,25 @@
 import http from "../http-common";
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 const getAll = () => {
-  return http.get("/escala");
+  return http.get("/rol");
 };
 const get = id => {
-  return http.get(`/escala/${id}`);
+  return http.get(`/rol/${id}`);
 };
 const create = data => {
-  return http.post("/escala", data);
+  return http.post("/rol", data);
 };
 const update = (id, data) => {
-  return http.put(`/escala/${id}`, data);
+  return http.put(`/rol/${id}`, data);
 };
 const remove = id => {
-  return http.delete(`/escala/${id}`);
+  return http.delete(`/rol/${id}`);
 };
 const removeAll = () => {
-  return http.delete(`/escala`);
+  return http.delete(`/rol`);
 };
 const findByTitle = title => {
-  return http.get(`/escala?title=${title}`);
+  return http.get(`/rol?title=${title}`);
 };
 const grupoMineralesService = {
   getAll,

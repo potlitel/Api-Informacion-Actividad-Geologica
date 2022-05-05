@@ -52,7 +52,8 @@ export default function EscalasList() {
             
             <Heading>Listado de Escalas</Heading>
           <section>
-            {tutorials.map((tuto,index) => (
+            { !tutorials.length ===0 ? (<div>Loading ...</div>) : (
+              tutorials.map((tuto, index) => (
               <Box key={tuto._id}
                 bg="gray.100"
                 p={4}
@@ -65,7 +66,7 @@ export default function EscalasList() {
                       Escala {index + 1} : <strong>{tuto.valor_escala}</strong>
                   </Text>
                 </Flex>
-              </Box>
+              </Box>)
             ))}  
           </section>
 
