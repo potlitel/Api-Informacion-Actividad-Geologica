@@ -2,6 +2,7 @@ import "../footer.css"
 import { Divider, Icon } from '@chakra-ui/react'
 import { MdFacebook, MdSanitizer } from 'react-icons/md'
 import { FaMountain } from 'react-icons/fa'
+import { VscDebugBreakpointDataUnverified } from 'react-icons/Vsc'
 import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineDribbble } from "react-icons/ai";
 import { FaBeer } from 'react-icons/fa';
 import { Search2Icon } from '@chakra-ui/icons'
@@ -20,23 +21,23 @@ export default function Footer() {
           <div class="col-xs-6 col-md-3">
             <h6><Icon as={FaMountain} w={6} h={6}/> Categories</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              <li><a href="http://scanfcode.com/category/c-language/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Templates</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6><Icon as={FaMountain} w={6} h={6}/> Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a href="http://scanfcode.com/about/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/"><Icon as={VscDebugBreakpointDataUnverified} w={3} h={3}/> Sitemap</a></li>
             </ul>
           </div>
         </div>
