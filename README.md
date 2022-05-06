@@ -118,3 +118,7 @@ npm run dev
   https://javascript.plainenglish.io/simple-pagination-with-node-js-mongoose-and-express-4942af479ab2
   https://www.codegrepper.com/code-examples/whatever/pagination+in+node+js+mongodb
   https://npm.io/package/mongoose-paginate
+
+
+https://www.bezkoder.com/react-table-pagination-server-side/
+https://www.bezkoder.com/react-pagination-material-ui/

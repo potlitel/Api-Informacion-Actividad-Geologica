@@ -9,6 +9,10 @@ import escala from "../../images/thermometer-scale_38798.png"
 export default function MateriasPrimasList() { 
 
         const [materias, setMaterias] = useState([]);
+        const [page, setPage] = useState(1);
+        const [count, setCount] = useState(0);
+        const [pageSize, setPageSize] = useState(3);
+        
         const [currentTutorial, setCurrentTutorial] = useState(null);
         const [currentIndex, setCurrentIndex] = useState(-1);
         const [searchTitle, setSearchTitle] = useState("");
@@ -17,16 +21,31 @@ export default function MateriasPrimasList() {
             retrieveMaterias();
         }, []);
 
-    const retrieveMaterias = () => {
-    MateriasDataService.getAll()
-      .then(response => {
-        setMaterias(response.data);
-        console.log(response.data);
-      })
-      .catch(e => {
-        console.log(e);
-      });
+    const getRequestParams = (searchTitle, page, pageSize) => {
+        let params = {};
+        if (page) {
+        params["page"] = page - 1;
+        }
+        if (pageSize) {
+        params["size"] = pageSize;
+        }
+        return params;
     };
+    
+    const retrieveMaterias = () => {
+        const params = getRequestParams(page, pageSize);
+        MateriasDataService.getAll(params)
+        .then(response => {
+            const { docs, totalPages } = response.data;
+            setMaterias(docs);
+            setCount(totalPages);
+            console.log(response.data);
+        })
+        .catch(e => {
+            console.log(e);
+        });
+    };
+    useEffect(retrieveMaterias, [page, pageSize]);
     
     return (
      <div class="main">
