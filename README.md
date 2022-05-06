@@ -92,25 +92,29 @@ npm run dev
 
 ## Links
 
-+  Backend of Vidly, an imaginary video rental app <https://github.com/mosh-hamedani/vidly-api-node>
-+ Documenting a Node.js REST API using Swagger <https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/>
-+ Simple Node.js REST API. <https://github.com/mwangiKibui/node.js-simple-api>
-+ How to implement and use Swagger in Node.js <https://javascript.plainenglish.io/how-to-implement-and-use-swagger-in-nodejs-d0b95e765245>
-+ SuperTest <https://github.com/visionmedia/supertest>
-+ TESTEANDO UN API REST NODE.JS CON MOCHA <http://xurxodev.com/testeando-un-api-rest-con-mocha/>
-+ Supertest fails on Content-Type #187 <https://github.com/visionmedia/supertest/issues/187>
-+ Writing Test with Supertest and Mocha for Expressjs Routes <https://medium.com/@ehtemam/writing-test-with-supertest-and-mocha-for-expressjs-routes-555d2910d2c2>
-+ Dead-Simple API Tests With SuperTest, Mocha, and Chai <https://dev-tester.com/dead-simple-api-tests-with-supertest-mocha-and-chai/>
-+ Express 4 middleware when route is not found (finalhandler not called): how to check for it? <https://stackoverflow.com/questions/38681318/express-4-middleware-when-route-is-not-found-finalhandler-not-called-how-to-c>
-+ node js route not found <https://stackoverflow.com/questions/28566487/node-js-route-not-found>
-+ Express.js route not found <https://stackoverflow.com/questions/48954699/express-js-route-not-found>
-+ How to usetextfunctioninResponse <https://www.tabnine.com/code/javascript/functions/supertest/Response/text>
-+ Minimal test example for supertest <https://www.thiscodeworks.com/minimal-test-example-for-supertest-api-testing-nodejs-supertest/61e18883ddff800015669cba>
-+ Server Testing Stack with Chai, jsdom, and SuperTest <https://codewithhasan.medium.com/server-testing-stack-with-chai-jsdom-and-supertest-1dc0213786ef>
-+ Supercharge your nodejs testing using supertest <https://mistryakshar54.medium.com/supercharge-your-nodejs-testing-using-supertest-ecaa90497e2f>
-+  How To Use Joi for Node API Schema Validation <https://www.digitalocean.com/community/tutorials/how-to-use-joi-for-node-api-schema-validation>
-+  Joi — awesome code validation for Node.js and Express <https://softchris.github.io/pages/joi.html#introducing-joi>
-+  DATA VALIDATION IN NODEJS AND EXPRESS USING JOI <https://www.topcoder.com/thrive/articles/data-validation-in-nodejs-and-express-using-joi>
-+  Node.js + Express API - Request Schema Validation with Joi <https://jasonwatmore.com/post/2020/07/22/nodejs-express-api-request-schema-validation-with-joi>
-+  MANUAL DE INSTRUCCIONES DE LA ACTIVIDAD DE INVESTIGACIÓN GEOLÓGICA <https://www.minem.gob.cu/sites/default/files/articulos-genericos/archivos/manual_instrucciones_geologia_p.pdf>
-+  Como usar Mongo Seeding CLI con Express y Mongoose<https://dalthonmh.medium.com/como-usar-mongo-seeding-cli-con-express-y-mongoose-f3bb509cbd7c>
++ Backend of Vidly, an imaginary video rental app [https://github.com/mosh-hamedani/vidly-api-node](https://github.com/mosh-hamedani/vidly-api-node)
++ Documenting a Node.js REST API using Swagger [https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/](https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/)
++ Simple Node.js REST API. [https://github.com/mwangiKibui/node.js-simple-api](https://github.com/mwangiKibui/node.js-simple-api)
++ How to implement and use Swagger in Node.js [https://javascript.plainenglish.io/how-to-implement-and-use-swagger-in-nodejs-d0b95e765245](https://javascript.plainenglish.io/how-to-implement-and-use-swagger-in-nodejs-d0b95e765245)
++ SuperTest [https://github.com/visionmedia/supertest](https://github.com/visionmedia/supertest)
++ TESTEANDO UN API REST NODE.JS CON MOCHA [http://xurxodev.com/testeando-un-api-rest-con-mocha/](http://xurxodev.com/testeando-un-api-rest-con-mocha/)
++ Supertest fails on Content-Type #187 [https://github.com/visionmedia/supertest/issues/187](https://github.com/visionmedia/supertest/issues/187)
++ Writing Test with Supertest and Mocha for Expressjs Routes [https://medium.com/@ehtemam/writing-test-with-supertest-and-mocha-for-expressjs-routes-555d2910d2c2](https://medium.com/@ehtemam/writing-test-with-supertest-and-mocha-for-expressjs-routes-555d2910d2c2)
++ Dead-Simple API Tests With SuperTest, Mocha, and Chai [https://dev-tester.com/dead-simple-api-tests-with-supertest-mocha-and-chai/](https://dev-tester.com/dead-simple-api-tests-with-supertest-mocha-and-chai/)
++ Express 4 middleware when route is not found (finalhandler not called): how to check for it? [https://stackoverflow.com/questions/38681318/express-4-middleware-when-route-is-not-found-finalhandler-not-called-how-to-c](https://stackoverflow.com/questions/38681318/express-4-middleware-when-route-is-not-found-finalhandler-not-called-how-to-c)
++ node js route not found [https://stackoverflow.com/questions/28566487/node-js-route-not-found](https://stackoverflow.com/questions/28566487/node-js-route-not-found)
++ Express.js route not found [https://stackoverflow.com/questions/48954699/express-js-route-not-found](https://stackoverflow.com/questions/48954699/express-js-route-not-found)
++ How to usetextfunctioninResponse [https://www.tabnine.com/code/javascript/functions/supertest/Response/text](https://www.tabnine.com/code/javascript/functions/supertest/Response/text)
++ Minimal test example for supertest [https://www.thiscodeworks.com/minimal-test-example-for-supertest-api-testing-nodejs-supertest/61e18883ddff800015669cba](https://www.thiscodeworks.com/minimal-test-example-for-supertest-api-testing-nodejs-supertest/61e18883ddff800015669cba)
++ Server Testing Stack with Chai, jsdom, and SuperTest [https://codewithhasan.medium.com/server-testing-stack-with-chai-jsdom-and-supertest-1dc0213786ef](https://codewithhasan.medium.com/server-testing-stack-with-chai-jsdom-and-supertest-1dc0213786ef)
++ Supercharge your nodejs testing using supertest [https://mistryakshar54.medium.com/supercharge-your-nodejs-testing-using-supertest-ecaa90497e2f](https://mistryakshar54.medium.com/supercharge-your-nodejs-testing-using-supertest-ecaa90497e2f)
++ How To Use Joi for Node API Schema Validation [https://www.digitalocean.com/community/tutorials/how-to-use-joi-for-node-api-schema-validation](https://www.digitalocean.com/community/tutorials/how-to-use-joi-for-node-api-schema-validation)
++ Joi — awesome code validation for Node.js and Express [https://softchris.github.io/pages/joi.html#introducing-joi](https://softchris.github.io/pages/joi.html#introducing-joi)
++ DATA VALIDATION IN NODEJS AND EXPRESS USING JOI [https://www.topcoder.com/thrive/articles/data-validation-in-nodejs-and-express-using-joi](https://www.topcoder.com/thrive/articles/data-validation-in-nodejs-and-express-using-joi)
++ Node.js + Express API - Request Schema Validation with Joi [https://jasonwatmore.com/post/2020/07/22/nodejs-express-api-request-schema-validation-with-joi](https://jasonwatmore.com/post/2020/07/22/nodejs-express-api-request-schema-validation-with-joi)
++ MANUAL DE INSTRUCCIONES DE LA ACTIVIDAD DE INVESTIGACIÓN GEOLÓGICA [https://www.minem.gob.cu/sites/default/files/articulos-genericos/archivos/manual_instrucciones_geologia_p.pdf](https://www.minem.gob.cu/sites/default/files/articulos-genericos/archivos/manual_instrucciones_geologia_p.pdf)
++ Como usar Mongo Seeding CLI con Express y Mongoose[https://dalthonmh.medium.com/como-usar-mongo-seeding-cli-con-express-y-mongoose-f3bb509cbd7c](https://dalthonmh.medium.com/como-usar-mongo-seeding-cli-con-express-y-mongoose-f3bb509cbd7c)
++ https://www.bezkoder.com/node-js-mongodb-pagination/
+  https://javascript.plainenglish.io/simple-pagination-with-node-js-mongoose-and-express-4942af479ab2
+  https://www.codegrepper.com/code-examples/whatever/pagination+in+node+js+mongodb
+  https://npm.io/package/mongoose-paginate

@@ -10,7 +10,7 @@ const {
 const { cacheMiddleware } = require("../middlewares/memory-cache.middleware");
 
 // GET ALL
-router.get("/", cacheMiddleware(5), Controller.get_all);
+router.get("/", cacheMiddleware(5), Controller.findAll);
 
 // POST
 router.post("/", validate(validationMP.materiaPrima),Controller.create);

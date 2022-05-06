@@ -56,3 +56,9 @@ https://www.golangprograms.com/display-json-data-in-reactjs.html
 https://github.com/pkosiec/mongo-seeding
 
 https://chakra-ui.com/
+
+https://www.bezkoder.com/node-js-mongodb-pagination/
+
+https://javascript.plainenglish.io/simple-pagination-with-node-js-mongoose-and-express-4942af479ab2
+https://www.codegrepper.com/code-examples/whatever/pagination+in+node+js+mongodb
+https://npm.io/package/mongoose-paginate
