@@ -68,3 +68,16 @@ https://www.bezkoder.com/react-table-pagination-server-side/
 
 https://www.bezkoder.com/react-table-pagination-server-side/
 https://www.bezkoder.com/react-pagination-material-ui/
+
+
+
+
+Continuar el tema de paginacion desde estas paginas
+
+https://www.bezkoder.com/node-js-mongodb-pagination/
+
+https://github.com/bezkoder/node-js-mongodb-pagination/blob/master/app/controllers/tutorial.controller.js
+
+https://www.bezkoder.com/react-pagination-material-ui/
+
+https://www.bezkoder.com/react-table-pagination-server-side/

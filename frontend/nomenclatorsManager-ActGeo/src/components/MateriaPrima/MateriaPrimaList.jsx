@@ -21,7 +21,7 @@ export default function MateriasPrimasList() {
             retrieveMaterias();
         }, []);
 
-    const getRequestParams = (searchTitle, page, pageSize) => {
+    const getRequestParams = (page, pageSize) => {
         let params = {};
         if (page) {
         params["page"] = page - 1;
