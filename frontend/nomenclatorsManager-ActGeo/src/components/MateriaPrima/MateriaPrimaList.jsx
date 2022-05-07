@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import MateriasDataService from "../../services/MateriasPrimasServices";
 //Import the pagination component
-import Pagination from "materialui-pagination";
+//import Pagination from "materialui-pagination";
 import ReactPaginate from 'react-paginate';
+import PaginationBoostrap from 'react-bootstrap/Pagination'
+import Pagination from '@mui/material/Pagination';
+import TablePagination from '@mui/material/TablePagination';
+import alain from "../../components/PaginationMUI"
 import { Link } from "react-router-dom";
 import { Box, Heading, Flex, Text, Tag } from '@chakra-ui/react'
 import "../../box.css"
 import logo2 from "../../images/pngwing.com (3).png"
 import escala from "../../images/thermometer-scale_38798.png"
+
 
 export default function MateriasPrimasList() { 
 
@@ -51,8 +56,13 @@ export default function MateriasPrimasList() {
         });
     };
 
+    function handlePageClick({ selected: selectedPage }) {
+      setPage(selectedPage);
+    }
+
     const handlePageChange = (event, value) => {
-      setPage(value);
+      setPage(8);
+      console.info("value");
     };
 
     const handlePageSizeChange = (event) => {
@@ -120,7 +130,25 @@ export default function MateriasPrimasList() {
               </Box>)
             ))}  
           </section>
-          
+          <ReactPaginate
+                  breakLabel="..."
+                  nextLabel="next >"
+                  onPageChange={handlePageClick}
+                  pageRangeDisplayed={pageSize}
+                  pageCount={count}
+                  previousLabel="< previous"
+                  pageClassName="page-item"
+                  pageLinkClassName="page-link"
+                  previousClassName="page-item"
+                  previousLinkClassName="page-link"
+                  nextClassName="page-item"
+                  nextLinkClassName="page-link"
+                  breakClassName="page-item"
+                  breakLinkClassName="page-link"
+                  containerClassName="pagination"
+                  activeClassName="active"
+                  renderOnZeroPageCount={null}
+                />
         </div>
 
         <div class="clear">&nbsp;</div>

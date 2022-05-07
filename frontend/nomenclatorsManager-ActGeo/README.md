@@ -65,12 +65,8 @@ https://npm.io/package/mongoose-paginate
 
 https://www.bezkoder.com/react-table-pagination-server-side/
 
-
 https://www.bezkoder.com/react-table-pagination-server-side/
 https://www.bezkoder.com/react-pagination-material-ui/
-
-
-
 
 Continuar el tema de paginacion desde estas paginas
 
@@ -81,3 +77,19 @@ https://github.com/bezkoder/node-js-mongodb-pagination/blob/master/app/controlle
 https://www.bezkoder.com/react-pagination-material-ui/
 
 https://www.bezkoder.com/react-table-pagination-server-side/
+
+https://mui.com/material-ui/getting-started/installation/
+
+https://ihsavru.medium.com/react-paginate-implementing-pagination-in-react-f199625a5c8e
+
+https://www.npmjs.com/package/react-paginate
+
+https://github.com/AdeleD/react-paginate
+
+https://create-react-app.dev/docs/adding-bootstrap/
+
+https://www.pluralsight.com/guides/how-to-import-components-from-react-
+
+bootstrap
+
+https://react-bootstrap.github.io/
