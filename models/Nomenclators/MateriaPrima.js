@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-var mongoosePaginate = require("mongoose-paginate");
+var mongoosePaginate = require("mongoose-paginate-v2");
 const uniqueValidator = require('mongoose-unique-validator');
 
 const Schema = mongoose.Schema;

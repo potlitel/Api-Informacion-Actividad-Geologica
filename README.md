@@ -20,6 +20,8 @@
   * The ultimate CLI tool for populating your MongoDB database 🚀.Define MongoDB documents in JSON, JavaScript or even TypeScript file(s). Import them with command line interface.
 * [mongoose-paginate](https://www.npmjs.com/package/mongoose-paginate)
   * Pagination plugin for Mongoose
+* [mongoose-paginate-v2](https://www.npmjs.com/package/mongoose-paginate-v2)
+  * A custom pagination library for Mongoose with customizable labels.
 * [mongoose-unique-validator](https://www.npmjs.com/package/mongoose-paginate)
   * Pagination plugin for Mongoose
 * [cors](https://www.npmjs.com/package/cors)
@@ -118,7 +120,6 @@ npm run dev
   https://javascript.plainenglish.io/simple-pagination-with-node-js-mongoose-and-express-4942af479ab2
   https://www.codegrepper.com/code-examples/whatever/pagination+in+node+js+mongodb
   https://npm.io/package/mongoose-paginate
-
 
 https://www.bezkoder.com/react-table-pagination-server-side/
 https://www.bezkoder.com/react-pagination-material-ui/

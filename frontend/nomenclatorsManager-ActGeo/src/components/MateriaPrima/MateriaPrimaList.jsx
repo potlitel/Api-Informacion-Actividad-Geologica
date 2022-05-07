@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MateriasDataService from "../../services/MateriasPrimasServices";
+//Import the pagination component
+import Pagination from "materialui-pagination";
+import ReactPaginate from 'react-paginate';
 import { Link } from "react-router-dom";
 import { Box, Heading, Flex, Text, Tag } from '@chakra-ui/react'
 import "../../box.css"
@@ -11,7 +14,9 @@ export default function MateriasPrimasList() {
         const [materias, setMaterias] = useState([]);
         const [page, setPage] = useState(1);
         const [count, setCount] = useState(0);
-        const [pageSize, setPageSize] = useState(3);
+        const [pageSize, setPageSize] = useState(5);
+
+        const pageSizes = [5, 10, 15, 20];
         
         const [currentTutorial, setCurrentTutorial] = useState(null);
         const [currentIndex, setCurrentIndex] = useState(-1);
@@ -45,6 +50,16 @@ export default function MateriasPrimasList() {
             console.log(e);
         });
     };
+
+    const handlePageChange = (event, value) => {
+      setPage(value);
+    };
+
+    const handlePageSizeChange = (event) => {
+      setPageSize(event.target.value);
+      setPage(1);
+    };
+
     useEffect(retrieveMaterias, [page, pageSize]);
     
     return (
@@ -70,6 +85,16 @@ export default function MateriasPrimasList() {
         <div class="gp83">
             
             <Heading>Listado de Materias Primas</Heading>
+          <Flex>
+            {"Items per Page: "}
+          <select onChange={handlePageSizeChange} value={pageSize}>
+            {pageSizes.map((size) => (
+              <option key={size} value={size}>
+                {size}
+              </option>
+            ))}
+          </select>
+          </Flex>  
           <section>
             { !materias.length ===0 ? (<div>Loading ...</div>) : (
               materias.map((materia, index) => (
@@ -95,7 +120,7 @@ export default function MateriasPrimasList() {
               </Box>)
             ))}  
           </section>
-
+          
         </div>
 
         <div class="clear">&nbsp;</div>
