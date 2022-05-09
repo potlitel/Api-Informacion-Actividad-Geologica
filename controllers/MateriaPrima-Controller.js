@@ -32,8 +32,7 @@ const myCustomLabels = {
   meta: 'paginator'
 };
 
-// Retrieve all Tutorials from the database.
-// Retrieve all Tutorials from the database.
+// Retrieve all MateriaPrima from the database.
 exports.findAll = (req, res) => {
   const { page, size, title } = req.query;
   var condition = title

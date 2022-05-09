@@ -93,3 +93,6 @@ https://www.pluralsight.com/guides/how-to-import-components-from-react-
 bootstrap
 
 https://react-bootstrap.github.io/
+
+Revisar este para improve pagination process
+https://codepen.io/monsieurv/pen/abyJQWQ

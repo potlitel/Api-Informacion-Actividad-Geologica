@@ -1,5 +1,38 @@
 const Entity = require("../models/Nomenclators/Municipio");
 
+const getPagination = (page, size) => {
+  const limit = size ? +size : 5;
+  const offset = page ? page * limit : 0;
+
+  return { limit, offset };
+};
+
+// Retrieve all MateriaPrima from the database.
+exports.findAll = (req, res) => {
+  const { page, size, title } = req.query;
+  var condition = title
+    ? { title: { $regex: new RegExp(title), $options: "i" } }
+    : {};
+
+  const { limit, offset } = getPagination(page, size);
+
+  Entity.paginate(condition, { offset, limit ,select: 'nombre provincia', populate: [{ path: "provincia", select: "nombre" }],})
+    .then((data) => {
+      res.send({
+        totalItems: data.totalDocs,
+        docs: data.docs,
+        totalPages: data.totalPages,
+        currentPage: data.page - 1,
+      });
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving tutorials.",
+      });
+    });
+};
+
 // GET ALL
 exports.get_all = async (req, res, next) => {
   try {
