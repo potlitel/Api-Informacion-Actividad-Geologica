@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MateriasDataService from "../../services/MateriasPrimasServices";
-//Import the pagination component
-//import Pagination from "materialui-pagination";
+import PaginationControlled from "../PaginationControlled";
 import ReactPaginate from 'react-paginate';
-import PaginationBoostrap from 'react-bootstrap/Pagination'
-import Pagination from '@mui/material/Pagination';
-import TablePagination from '@mui/material/TablePagination';
-import alain from "../../components/PaginationMUI"
 import { Link } from "react-router-dom";
 import { Box, Heading, Flex, Text, Tag } from '@chakra-ui/react'
 import "../../box.css"
@@ -57,7 +52,8 @@ export default function MateriasPrimasList() {
     };
 
     function handlePageClick({ selected: selectedPage }) {
-      setPage(selectedPage);
+      console.info(selectedPage + 1);
+      setPage(selectedPage + 1);
     }
 
     const handlePageChange = (event, value) => {
@@ -130,6 +126,7 @@ export default function MateriasPrimasList() {
               </Box>)
             ))}  
           </section>
+          
           <ReactPaginate
                   breakLabel="..."
                   nextLabel="next >"

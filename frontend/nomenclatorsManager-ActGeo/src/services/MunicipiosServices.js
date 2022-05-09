@@ -4,8 +4,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const getAll = () => {
-  return http.get("/municipio");
+const getAll = (params) => {
+  return http.get("/municipio", { params });
 };
 const get = id => {
   return http.get(`/municipio/${id}`);

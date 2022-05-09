@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MunicipiosDataService from "../../services/MunicipiosServices";
 import { Link } from "react-router-dom";
 import { Box, Heading, Flex, Text, Spacer } from '@chakra-ui/react'
+import ReactPaginate from 'react-paginate';
 import "../../box.css"
 import logo2 from "../../images/pngwing.com (3).png"
 import escala from "../../images/thermometer-scale_38798.png"
@@ -9,25 +10,52 @@ import escala from "../../images/thermometer-scale_38798.png"
 export default function MunicipiosList() { 
 
         const [municipios, setMunicipios] = useState([]);
+        const [page, setPage] = useState(1);
+        const [count, setCount] = useState(0);
+        const [pageSize, setPageSize] = useState(5);
+        const pageSizes = [5, 10, 15, 20];
+
         const [currentTutorial, setCurrentTutorial] = useState(null);
         const [currentIndex, setCurrentIndex] = useState(-1);
         const [searchTitle, setSearchTitle] = useState("");
 
-        useEffect(() => {
-            retrieveMunicipios();
-        }, []);
+    const getRequestParams = (page, pageSize) => {
+        let params = {};
+        if (page) {
+        params["page"] = page - 1;
+        }
+        if (pageSize) {
+        params["size"] = pageSize;
+        }
+        return params;
+    };
 
     const retrieveMunicipios = () => {
-    MunicipiosDataService.getAll()
-      .then(response => {
-        setMunicipios(response.data);
-        console.log(response.data);
-      })
-      .catch(e => {
-        console.log(e);
-      });
+      const params = getRequestParams(page, pageSize);
+      MunicipiosDataService.getAll(params)
+        .then(response => {
+            const { docs, totalPages } = response.data;
+            setMunicipios(docs);
+            setCount(totalPages);
+            console.log(response.data);
+        })
+        .catch(e => {
+          console.log(e);
+        });
     };
     
+    function handlePageClick({ selected: selectedPage }) {
+      console.info(selectedPage + 1);
+      setPage(selectedPage + 1);
+    }
+
+    const handlePageSizeChange = (event) => {
+      setPageSize(event.target.value);
+      setPage(1);
+    };
+
+    useEffect(retrieveMunicipios, [page, pageSize]);
+
     return (
      <div class="main">
         <div class="clear"></div>
@@ -51,6 +79,16 @@ export default function MunicipiosList() {
         <div class="gp83">
             
             <Heading>Listado de Municipios</Heading>
+            <Flex>
+            {"Items per Page: "}
+          <select onChange={handlePageSizeChange} value={pageSize}>
+            {pageSizes.map((size) => (
+              <option key={size} value={size}>
+                {size}
+              </option>
+            ))}
+          </select>
+          </Flex>  
           <section>
             { !municipios.length ===0 ? (<div>Loading ...</div>) : (
               municipios.map((municipio, index) => (
@@ -77,7 +115,26 @@ export default function MunicipiosList() {
               </Box>)
             ))}  
           </section>
-
+          
+          <ReactPaginate
+                  breakLabel="..."
+                  nextLabel="next >"
+                  onPageChange={handlePageClick}
+                  pageRangeDisplayed={pageSize}
+                  pageCount={count}
+                  previousLabel="< previous"
+                  pageClassName="page-item"
+                  pageLinkClassName="page-link"
+                  previousClassName="page-item"
+                  previousLinkClassName="page-link"
+                  nextClassName="page-item"
+                  nextLinkClassName="page-link"
+                  breakClassName="page-item"
+                  breakLinkClassName="page-link"
+                  containerClassName="pagination"
+                  activeClassName="active"
+                  renderOnZeroPageCount={null}
+                />
         </div>
 
         <div class="clear">&nbsp;</div>
