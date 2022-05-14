@@ -28,10 +28,20 @@ const schema = new Schema(
       { type: Schema.Types.ObjectId, ref: "Entidad", required: true },
     ],
     fecha_inicio: {
-      type: String
+      type: Date,
+        // The dates of the first and last episodes of
+        // Star Trek: The Next Generation
+        min: '1987-09-28',
+        max: '1994-05-23',
+        required: true
     },
     fecha_fin: {
-      type: String
+      type: Date,
+        // The dates of the first and last episodes of
+        // Star Trek: The Next Generation
+        min: '1987-09-28',
+        max: '1994-05-23',
+        required: true
     },
     tarea_geologico: {
       type: String
