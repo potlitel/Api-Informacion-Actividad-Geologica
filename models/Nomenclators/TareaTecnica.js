@@ -22,7 +22,10 @@ const schema = new Schema(
       { type: Schema.Types.ObjectId, ref: "GrupoMineral", required: true },
     ],
     estadio: [
-      { type: Schema.Types.ObjectId, ref: "ObjetivoGeologico", required: true },
+      { type: Schema.Types.ObjectId, ref: "Estadio", required: true },
+    ],
+    entidad: [
+      { type: Schema.Types.ObjectId, ref: "Entidad", required: true },
     ],
     fecha_inicio: {
       type: String
