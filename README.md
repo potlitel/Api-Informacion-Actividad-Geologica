@@ -123,3 +123,16 @@ npm run dev
 
 https://www.bezkoder.com/react-table-pagination-server-side/
 https://www.bezkoder.com/react-pagination-material-ui/
+https://dev.to/justinkarso/strapi-v4-extend-core-controller-and-create-custom-routes-18kc
+https://strapi.io/blog/how-to-create-a-custom-api-endpoint-in-strapi
+https://docs.strapi.io/developer-docs/latest/development/backend-customization/controllers.html#implementation
+
+https://strapi.io/blog/deep-filtering-alpha-26
+https://forum.strapi.io/t/best-approach-for-nested-data/942/4
+https://forum.strapi.io/t/strapi-v4-populate-media-and-dynamiczones-from-components/12670
+https://forum.strapi.io/t/strapi-v4-populate-media-and-dynamiczones-from-components/12670/21?page=2
+https://forum.strapi.io/t/deep-filtering-how-to-filter-data-with-nested-fields/5131
+https://docs.strapi.io/developer-docs/latest/developer-resources/database-apis-reference/rest-api.html
+strapi findmany nested objects
+
+https://www.geominsal.cu/wp-content/uploads/2018/05/mapa-geominsal.jpg
