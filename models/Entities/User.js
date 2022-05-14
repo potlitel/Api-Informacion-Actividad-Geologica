@@ -16,6 +16,16 @@ const schema = new Schema(
         trim: true
         }
   },
+    user: {
+      type: String,
+      required: true,
+      unique:true
+    },
+    email: {
+      type: String,
+      required: true,
+      unique:true
+    },
     sexo: {
       type: String,
       required: true,

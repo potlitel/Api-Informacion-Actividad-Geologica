@@ -11,6 +11,11 @@ const schema = new Schema(
       required: true,
       unique:true
     },
+    tipo_entidad: {
+      type: String,
+      required: true,
+      enum : ['Entidad 1','Entidad 2']
+    },
   },
   { timestamps: true }
 );
