@@ -136,3 +136,5 @@ https://docs.strapi.io/developer-docs/latest/developer-resources/database-apis-r
 strapi findmany nested objects
 
 https://www.geominsal.cu/wp-content/uploads/2018/05/mapa-geominsal.jpg
+
+https://stackoverflow.com/questions/29299477/how-to-create-and-use-enum-in-mongoose
