@@ -5,7 +5,7 @@ import { Box, Heading, Flex, Text, Spacer } from '@chakra-ui/react'
 import "../../box.css"
 import logo2 from "../../images/pngwing.com (3).png"
 import estadioLogo from "../../images/estadío.png"
-
+import Header from "../Header"
 export default function EstadiosList() { 
 
         const [estadios, setEstadios] = useState([]);
@@ -30,6 +30,7 @@ export default function EstadiosList() {
     
     return (
      <div class="main">
+       {<Header />}
         <div class="clear"></div>
 
         <div class="g8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis lacus in metus tempor fringilla id eu nisi.
