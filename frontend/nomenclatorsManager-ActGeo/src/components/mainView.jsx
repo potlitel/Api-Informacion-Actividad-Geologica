@@ -7,16 +7,15 @@ import logo4 from "../images/pngegg.png"
 import logo5 from "../images/pngwing.com (4).png"
 import logo6 from "../images/kisspng-computer-icons-petroleum-industry-oil-well-free-high-quality-geology-icon-5ab1219e08d1d7.4352733215215579180361.png"
 import { Box, Text, Heading } from '@chakra-ui/react'
+import Header from "./Header"
 
 
-export default function GrupoMineralesList() { 
+export default function MainView() { 
     return (
         <div class="main">
         <div class="clear"></div>
-
-        <div class="g12">
-          <Heading>I'm a Heading</Heading>
-        </div>
+        
+        {<Header />}
         
         <div class="clear"></div>
 
@@ -26,7 +25,7 @@ export default function GrupoMineralesList() {
         <div class="g6">Quisque lectus purus, pellentesque et vestibulum sit amet, sollicitudin nec nisi. Integer at risus dui, et sodales nisi. Nulla iaculis imperdiet magna et malesuada. Morbi accumsan lectus et velit porta vel aliquam dolor egestas. Curabitur tincidunt, sapien a elementum aliquam, metus arcu bibendum justo, at blandit tellus sapien vel turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus suscipit orci eget mi volutpat euismod.</div>
         
         <div class="clear"></div>
-        <div >
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '35vh'}}>
         <div class="g3">
           <Box bg='tomato' borderWidth='1px' borderRadius='lg' overflow='hidden' w='100%' p={4} color='white'>
             <img src={logo3} width="300" height="300" alt="CoolBrand" />

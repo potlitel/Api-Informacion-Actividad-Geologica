@@ -7,7 +7,7 @@ import logo from "./images/pngwing.com.png"
 import escala from "./images/thermometer-scale_38798.png"
 import { Button } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link} from "react-router-dom";
 import GrupoMineralesList from "./components/GrupoMineralesList";
 import MainView from "./components/mainView"
 import NomencladoresMenu from "./components/NomecladoresMenu"
@@ -23,6 +23,7 @@ import ProvinciasList from "./components/Provincia/ProvinciasList"
 import RolesList from "./components/Rol/RolesList"
 import TiposProyectosGeologicosList from "./components/TipoProyectoGeologico/TiposProyectosGeologicosList"
 import FooterView from "./components/Footer"
+import NotFoundPage from './components/NotFound';
 
 
 
@@ -32,16 +33,16 @@ function App() {
     <div class="">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a href="/" class="navbar-brand">
+            <Link to="/" class="navbar-brand">
             <img src={logo} width="70" height="70" alt="CoolBrand"/>
-            </a>
+            </Link>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav">
                      
-                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <Link to="/" class="nav-item nav-link active">Home</Link>
                     <a href="#" class="nav-item nav-link">Profile</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nomencladores</a>
@@ -60,19 +61,23 @@ function App() {
       
       <div className="container mt-3">
         <Routes>
-          <Route path="/" element={<MainView />} />
-          <Route path="/grupoMinerales" element={<GrupoMineralesList />} />
-          <Route path="/escalas" element={<EscalasList />} />
-          <Route path="/estadios" element={<EstadiosList />} />
-          <Route path="/estadoFacturas" element={<EstadosFacturasList />} />
-          <Route path="/localidades" element={<LocalidadList />} />
-          <Route path="/materiasPrimas" element={<MateriasPrimasList />} />
-          <Route path="/municipios" element={<MunicipiosList />} />
-          <Route path="/niveles" element={<NivelesList />} />
-          <Route path="/objetivosGeologicos" element={<ObjetivosGeologicosList />} />
-          <Route path="/provincias" element={<ProvinciasList />} />
-          <Route path="/roles" element={<RolesList />} />
-          <Route path="/tiposProyectosGeologicos" element={<TiposProyectosGeologicosList />} />
+
+          <Route exact path="/" element={<MainView />} />
+          <Route exact path="/grupoMinerales" element={<GrupoMineralesList />} />
+          <Route exact path="/escalas" element={<EscalasList />} />
+          <Route exact path="/estadios" element={<EstadiosList />} />
+          <Route exact path="/estadoFacturas" element={<EstadosFacturasList />} />
+          <Route exact path="/localidades" element={<LocalidadList />} />
+          <Route exact path="/materiasPrimas" element={<MateriasPrimasList />} />
+          <Route exact path="/municipios" element={<MunicipiosList />} />
+          <Route exact path="/niveles" element={<NivelesList />} />
+          <Route exact path="/objetivosGeologicos" element={<ObjetivosGeologicosList />} />
+          <Route exact path="/provincias" element={<ProvinciasList />} />
+          <Route exact path="/roles" element={<RolesList />} />
+          <Route exact path="/tiposProyectosGeologicos" element={<TiposProyectosGeologicosList />} />
+          <Route path="" element={<NotFoundPage />} /> // empty ""
+          <Route path="*" element={<NotFoundPage />} /> // star *
+          <Route element={<NotFoundPage />} /> // without path
         </Routes>
       </div>    
       {<FooterView />}
