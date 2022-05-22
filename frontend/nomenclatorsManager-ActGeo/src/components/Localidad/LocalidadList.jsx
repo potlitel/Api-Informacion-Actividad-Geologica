@@ -1,5 +1,3 @@
-export default function LocalidadList() { 
-    return (
-        <div>Listado Localidades</div>
-    )
+export default function LocalidadList() {
+  return <div>Listado Localidades</div>;
 }
